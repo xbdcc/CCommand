@@ -29,6 +29,7 @@ adb shell settings put secure sms_default_application com.carlos.sms
 
 ### 获取屏幕熄灭状态：
 adb shell "dumpsys window policy | grep mScreenOnFully"
+<br>
 adb shell dumpsys power | findstr "Display Power:state="
 
 ## 性能相关：
