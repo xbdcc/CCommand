@@ -52,3 +52,11 @@ adb shell "cat /proc/uid_stat/10189/tcp_snd"
 
 ### 通过uid获取下行流量：
 adb shell "cat /proc/uid_stat/11110/tcp_rcv"
+
+## 应用相关：
+### 显示安装应用：
+adb install (-r强制安装) /Users/caochang/apk/BBox.apk
+### 隐式安装应用：
+adb shell pm install (-r) /sdcard/xbd/BBox.apk
+### 无弹框安装应用：
+adb install-multiple -r /Users/caochang/apk/BBox.apk
