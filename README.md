@@ -1,6 +1,23 @@
 # AdbCommand
 Adb各种实用命令收集
 
+## 设备连接操作：
+### adb关闭：
+adb kill-server
+
+### adb开启：
+adb start-server
+
+### adb设备查看：
+adb devices
+
+### 从电脑上传文件到手机上：
+adb push /Users/caochang/apk/BBox.apk /sdcard/xbd/BBox.apk
+
+### 从手机上发送文件到电脑上：
+adb pull /sdcard/xbd/BBox.apk /Users/caochang/apk/BBox.apk
+
+
 ## 获取系统参数：
 ### 获取IMEI：
 adb shell dumpsys iphonesubinfo
