@@ -1,6 +1,9 @@
 # AdbCommand
 Adb各种实用命令收集
 
+若连接多台使用adb -s操作。
+windows下使用findstr，linux和mac下使用grep。
+
 ## 设备连接操作：
 ### adb关闭：
 adb kill-server
@@ -78,3 +81,5 @@ adb install (-r强制安装) /Users/caochang/apk/BBox.apk
 adb shell pm install (-r) /sdcard/xbd/BBox.apk
 ### 无弹框安装应用：
 adb install-multiple -r /Users/caochang/apk/BBox.apk
+### 发送广播：
+adb shell am broadcast -a com.carlos.bbox -e port 8888
