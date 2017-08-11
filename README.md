@@ -75,7 +75,9 @@ adb shell "cat /proc/uid_stat/10189/tcp_snd"
 adb shell "cat /proc/uid_stat/11110/tcp_rcv"
 
 ## 应用相关：
-### 显示安装应用：
+### 显示已安装应用：
+adb shell pm list packages com.carlos.bbox
+### 显式安装应用：
 adb install (-r强制安装) /Users/caochang/apk/BBox.apk
 ### 隐式安装应用：
 adb shell pm install (-r) /sdcard/xbd/BBox.apk
@@ -83,3 +85,5 @@ adb shell pm install (-r) /sdcard/xbd/BBox.apk
 adb install-multiple -r /Users/caochang/apk/BBox.apk
 ### 发送广播：
 adb shell am broadcast -a com.carlos.bbox -e port 8888
+### 启动服务：
+adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService 
