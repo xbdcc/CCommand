@@ -87,3 +87,11 @@ adb install-multiple -r /Users/caochang/apk/BBox.apk
 adb shell am broadcast -a com.carlos.bbox -e port 8888
 ### 启动服务：
 adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService 
+
+## Monkey相关：
+### 点击应用1000次：
+adb shell monkey -p com.codemao.dan -v 1000
+### 每隔1s点一次：
+adb shell monkey -p com.codemao.dan --throttle 1000 20
+
+
