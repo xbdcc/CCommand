@@ -21,6 +21,8 @@ git log
 git checkout a.txt
 ### 回退到上一版本
 git reset HEAD a.txt
+### 回退到某个版本
+git reset --hard 39952e15bce582b3
 
 ## 分支操作：
 ### 查看分支
