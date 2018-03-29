@@ -5,11 +5,14 @@ git add .
 git add a.txt
 ### 删除某文件
 git rm a.txt
+### 删除某文件
+git rm a.txt
 ### 提交文件
 git commit -m "test"
-### 修改当前commit的信息
-git commit --amend -m "update commit"
-
+### 删除远端保留本地文件
+git rm --cached settings.gradle
+### 删除远端文件夹保留本地文件夹
+git rm -r --cached gradle
 ## 状态查询：
 ### 查询当前状态
 git status
@@ -40,6 +43,7 @@ git rebase master
 git remote -v
 ### 推送分支
 git push origin dev
+git push origin master:master
 
 ## Tag操作
 ### 查看Tag
@@ -48,3 +52,7 @@ git tag
 git tag version0
 ### 删除Tag
 git tag -d version
+
+
+Arcanist基本使用教程：
+https://www.5288z.com/1469.html
