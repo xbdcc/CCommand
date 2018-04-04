@@ -26,6 +26,9 @@ git checkout a.txt
 git reset HEAD a.txt
 ### 回退到某个版本
 git reset --hard 39952e15bce582b3
+### 删除上个版本记录
+git reset --soft HEAD^
+
 
 ## 分支操作：
 ### 查看分支
