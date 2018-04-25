@@ -37,8 +37,8 @@ adb shell getprop ro.build.version.sdk
 ### 获取手机分辨率：
 adb shell wm size
 
-### 获取手机分辨率：
-adb shell getprop ro.product.cpu.abilist(Android5.0系统之后)
+### 获取手机cpu架构：
+adb shell getprop ro.product.cpu.abilist(Android5.0系统之后)    
 adb shell getprop ro.product.cpu.abi(Android5.0系统之前)
 
 ## 系统设置相关：
