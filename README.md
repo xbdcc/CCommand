@@ -37,6 +37,10 @@ adb shell getprop ro.build.version.sdk
 ### 获取手机分辨率：
 adb shell wm size
 
+### 获取手机分辨率：
+adb shell getprop ro.product.cpu.abilist(Android5.0系统之后)
+adb shell getprop ro.product.cpu.abi(Android5.0系统之前)
+
 ## 系统设置相关：
 ### 获取屏幕休眠时间：
 adb shell settings get system screen_off_timeout
@@ -93,5 +97,7 @@ adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService
 adb shell monkey -p com.codemao.dan -v 1000
 ### 每隔1s点一次：
 adb shell monkey -p com.codemao.dan --throttle 1000 20
+
+
 
 
