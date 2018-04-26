@@ -98,6 +98,9 @@ adb shell monkey -p com.codemao.dan -v 1000
 ### 每隔1s点一次：
 adb shell monkey -p com.codemao.dan --throttle 1000 20
 
+## 操控手机相关：
+### 点击坐标点：
+adb shell input tap 250 250
 
 
 
