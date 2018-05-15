@@ -4,6 +4,10 @@ Adb各种实用命令收集
 若连接多台使用adb -s操作。
 windows下使用findstr，linux和mac下使用grep。
 
+通过无线连接ADB:
+- 插上手机输入命令：adb tcpip 5555
+- 输入连接命令：adb connect 172.16.7.204:5555
+
 ## 设备连接操作：
 ### adb关闭：
 adb kill-server
