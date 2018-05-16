@@ -106,5 +106,9 @@ adb shell monkey -p com.codemao.dan --throttle 1000 20
 ### 点击坐标点：
 adb shell input tap 250 250
 
+### 截图：
+adb shell screencap -p /sdcard/a.png
+
+
 
 
