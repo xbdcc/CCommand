@@ -85,6 +85,8 @@ adb shell "cat /proc/uid_stat/11110/tcp_rcv"
 ## 应用相关：
 ### 显示已安装应用：
 adb shell pm list packages com.carlos.bbox
+### 卸载应用：
+adb uninstall com.carlos.bbox
 ### 显式安装应用：
 adb install (-r强制安装) /Users/caochang/apk/BBox.apk
 ### 隐式安装应用：
