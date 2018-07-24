@@ -2,9 +2,9 @@
 
 ### 通过key查看
 key详情信息命令：
-keytool -list -v -keystore codemao.keystore -storepass cm66668888 
+keytool -list -v -keystoret test.jks(秘钥名字) -storepass test(密码)
 证书指纹 (SHA1)命令：
-keytool -list -keystore codemao.keystore
+keytool -list -keystore test.jks(秘钥名字)
 
 ### 通过APK解压RSA查看
 keytool -printcert -file META-INF/CERT.RSA
