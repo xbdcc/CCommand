@@ -2,17 +2,17 @@
 ### 添加所有文件
 git add .
 ### 添加某文件
-git add a.txt
+git add <filename> 
 ### 删除某文件
-git rm a.txt
+git rm <filename> 
 ### 删除某文件
-git rm a.txt
+git rm <filename>
 ### 提交文件
-git commit -m "test"
+git commit -m <message>
 ### 删除远端保留本地文件
-git rm --cached settings.gradle
+git rm --cached <filename>
 ### 删除远端文件夹保留本地文件夹
-git rm -r --cached gradle
+git rm -r --cached <filepath>
 ## 状态查询：
 ### 查询当前状态
 git status
@@ -21,11 +21,11 @@ git log
 
 ## 版本回退：
 ### 执行git add前执行放弃本地修改，恢复上次提交
-git checkout a.txt
+git checkout <filename>
 ### 回退到上一版本
-git reset HEAD a.txt
+git reset HEAD <filename>
 ### 回退到某个版本
-git reset --hard 39952e15bce582b3
+git reset --hard <revision number>
 ### 删除上个版本记录
 git reset --soft HEAD^
 
@@ -34,28 +34,27 @@ git reset --soft HEAD^
 ### 查看分支
 git branch
 ### 新增分支
-git branch dev
+git branch <branchname>
 ### 删除分支
-git branch -d dev
+git branch -d <branchname>
 ### 切换分支
-git checkout dev
+git checkout <branchname>
 ### 合并分支
-git merge master
-git rebase master
+git merge <branchname>
+git rebase <branchname>
 ### 查看远程分支
 git remote -v
 ### 推送分支
-git push origin dev
+git push origin <branchname>
 git push origin master:master
 
 ## Tag操作
 ### 查看Tag
 git tag
 ### 新增Tag
-git tag version0
+git tag <tagname> 
 ### 删除Tag
-git tag -d version
-
-
+git tag -d <tagname>
+  
 Arcanist基本使用教程：
 https://www.5288z.com/1469.html
