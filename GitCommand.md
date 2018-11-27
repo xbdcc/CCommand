@@ -34,7 +34,7 @@ git branch
 ### 新增分支
 git branch dev
 ### 创建新的空白分支
-git checkout --orphan tst
+git checkout --orphan test
 ### 删除分支
 git branch -d dev
 ### 切换分支
