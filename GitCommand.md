@@ -33,6 +33,8 @@ git reset --soft HEAD^
 git branch
 ### 新增分支
 git branch dev
+### 创建新的空白分支
+git checkout --orphan tst
 ### 删除分支
 git branch -d dev
 ### 切换分支
