@@ -47,6 +47,8 @@ git remote -v
 ### 推送分支
 git push origin dev
 git push origin master:master
+### 远程克隆分支
+git clone -b dev ssh://git@xxx.xxx.cn/xxx/test.git
 
 ## Tag操作
 ### 查看Tag
