@@ -29,6 +29,8 @@ git reset --soft HEAD^
 
 
 ## 分支操作：
+### 拉取最新
+git pull
 ### 查看分支
 git branch
 ### 新增分支
@@ -39,6 +41,7 @@ git checkout --orphan test
 git branch -d dev
 ### 切换分支
 git checkout dev
+git checkout -b test origin/test
 ### 合并分支
 git merge master
 git rebase master
