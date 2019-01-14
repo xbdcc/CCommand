@@ -70,6 +70,26 @@ git push [origin] --tags
 ### 查看某个文件的包含提交人员，日期、版本号等记录信息，不包括修改详情
 git whatchanged <filename>
 
+## Git Commit规范
+Angular 的 commit 规范：https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines    
+如下：
+- build: 改变构建流程，新增依赖库、工具等（例如webpack修改）
+- ci: 自动化流程配置修改
+- docs: 修改文档
+- feat: 新功能
+- fix: 修复bug
+- perf: 改善性能和体现的修改
+- refactor: 代码重构
+- style: 仅仅修改了空格、缩进等，不改变代码逻辑
+- test: 测试用例的修改
 
+例如：feat(*): add new function.    
+
+
+         
 Arcanist基本使用教程：
 https://www.5288z.com/1469.html
+
+
+
+
