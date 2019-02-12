@@ -13,3 +13,5 @@ keytool -printcert -file META-INF/CERT.RSA
 ### 签名命令
 jarsigner -verbose -keystore D:\Aspire\project\Agent\key\aspire-android-test-release-key.keystore -signedjar D:\Aspire\project\Agent\apk\Agent.apk 
 
+### 修改别名
+keytool -changealias -keystore test.jks -alias 小不点（当前别名） -destalias carlos(修改后别名）
