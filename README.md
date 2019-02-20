@@ -103,6 +103,8 @@ adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService
 adb shell am start -n com.carlos.bbox/.MainActivity
 ### 停止应用：
 adb shell am froce-stop com.carlos.bbox
+### 查看顶层Activity类名：
+adb shell dumpsys activity | grep "mFocusedActivity"
 
 ## Monkey相关：
 ### 点击应用1000次：
