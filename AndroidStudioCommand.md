@@ -9,11 +9,12 @@ Command K
 ### 上传改变
 Shift Command K
 ### 逐步扩大（缩小）选择范围
-Option ↑（↓）
+Option ↑/↓
 ### 最近打开过的文件列表
 Command E
 ### 当前文件搜索内容
 Command F
 ### 全局文件搜索内容
 Shift Command F
-
+### 返回上次编辑位置
+Option Command ←/→
