@@ -20,3 +20,5 @@ Shift Command F
 Option Command ←/→
 ### 打开文件结构弹窗
 Command Fn F12
+### 列选择/块选择切换模式
+Command Shift 8
