@@ -18,3 +18,5 @@ Command F
 Shift Command F
 ### 返回上次编辑位置
 Option Command ←/→
+### 打开文件结构弹窗
+Command Fn F12
