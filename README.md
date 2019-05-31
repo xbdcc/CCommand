@@ -115,6 +115,8 @@ adb shell monkey -p com.codemao.dan --throttle 1000 20
 ## 操控手机相关：
 ### 点击坐标点：
 adb shell input tap 250 250
+### 输入文本
+adb shell input text hello world
 
 ### 截图：
 adb shell screencap -p /sdcard/a.png
