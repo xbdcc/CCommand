@@ -3,6 +3,8 @@
 Shift Command G
 ### 显示或隐藏隐藏文件
 Shift Command .
+### 修改环境变量后立即生效
+source ~/.bash_profile
 
 ## MAC命令
 ### 允许安装任何来源软件命令
