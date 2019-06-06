@@ -159,6 +159,15 @@ adb shell screencap -p /sdcard/a.png
 - 360手机：*20121220#。
 
 
-
+## 其他问题
+### adb pull失败
+在某些手机上进入到package文件夹下执行ls命令会出现以下问题,参考链接：[opendir failed, Permission denied](https://www.jianshu.com/p/359780457fa2?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
+```
+opendir failed, Permission denied
+```
+此时，可先run-as your-package命令，如
+```
+run-as com.carlos.test
+```
 
 
