@@ -66,6 +66,9 @@ git tag -a v0.1.2 -m “v0.1.2”
 git push origin v0.1.2
 ### push所有tag到远端服务器
 git push [origin] --tags
+### 删除Github上某个tag
+git delete 0.1.1
+git push origin :0.1.1
 
 ### 查看某个文件的包含提交人员，日期、版本号等记录信息，不包括修改详情
 git whatchanged <filename>
