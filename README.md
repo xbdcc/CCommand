@@ -107,8 +107,10 @@ adb shell am start -n com.carlos.bbox/.MainActivity
 ### 停止应用：
 adb shell am froce-stop com.carlos.bbox
 ### 查看顶层Activity类名：
+- 8.0以下命令
 adb shell dumpsys activity | grep "mFocusedActivity"
-
+- 8.0以上命令
+adb shell dumpsys activity | grep "mResumedActivity"
 ## Monkey相关：
 ### 点击应用1000次：
 adb shell monkey -p com.codemao.dan -v 1000
