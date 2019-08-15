@@ -41,12 +41,13 @@ git checkout --orphan test
 git branch -d dev
 ### 切换分支
 git checkout dev
-git checkout -b test origin/test
+### 拉取并切换远程分支
+git checkout -b dev origin/dev
 ### 合并分支
 git merge master
 git rebase master
 ### 查看远程分支
-git remote -v
+git branch -r
 ### 推送分支
 git push origin dev
 git push origin master:master
