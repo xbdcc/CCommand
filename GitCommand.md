@@ -42,7 +42,7 @@ git branch -d dev
 ### 切换分支
 git checkout dev
 ### 拉取并切换远程分支
-git checkout -b dev origin/dev
+git checkout -b dev(本地分支名) origin/dev(远端分支名)
 ### 合并分支
 git merge master
 git rebase master
