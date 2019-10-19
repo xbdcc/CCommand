@@ -28,6 +28,13 @@ git reset --hard 39952e15bce582b3
 git reset --soft HEAD^
 
 
+## 暂存操作
+### 暂存本地变动并revert
+git stash "暂存当前变动，revert到上次代码"
+### 恢复本地变动
+git stash pop stash@{0}
+
+
 ## 分支操作：
 ### 拉取最新
 git pull
