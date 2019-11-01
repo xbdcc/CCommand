@@ -33,7 +33,7 @@ adb shell dumpsys iphonesubinfo
 adb -d shell getprop ro.product.brand
 
 ### 获取手机型号：
-adb -d shell getprop ro.product.brand
+adb -d shell getprop ro.product.model
 
 ### 获取手机系统SDK版本号：
 adb shell getprop ro.build.version.sdk
