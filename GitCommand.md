@@ -7,6 +7,8 @@ git add a.txt
 git rm a.txt
 ### 提交文件
 git commit -m "test"
+### 追加修改提交文案
+git commit --amend -m "test2"
 ### 删除远端保留本地文件
 git rm --cached settings.gradle
 ### 删除远端文件夹保留本地文件夹
