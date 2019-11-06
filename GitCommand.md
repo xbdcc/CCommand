@@ -2,7 +2,9 @@
 ### 添加所有文件
 git add .
 ### 添加某文件
-git add a.txt
+git add a.txt<file>
+### 恢复文件改变前
+git checkout -- xbd.md<file>
 ### 删除某文件
 git rm a.txt
 ### 提交文件
