@@ -41,8 +41,14 @@ adb shell getprop ro.build.version.sdk
 ### 获取手机分辨率：
 adb shell wm size
 
+### 修改手机分辨率：
+adb shell wm size 1080*1920
+
 ### 获取手机dpi：
 adb shell wm density 
+
+### 修改手机dpi：
+adb shell wm density 480
 
 ### 获取手机cpu架构：
 adb shell getprop ro.product.cpu.abilist(Android5.0系统之后)    
