@@ -91,6 +91,9 @@ adb shell "cat /proc/uid_stat/10189/tcp_snd"
 ### 通过uid获取下行流量：
 adb shell "cat /proc/uid_stat/11110/tcp_rcv"
 
+### 导出crash日志：
+adb shell dumpsys dropbox --print >>crashlog_$(date +%Y%m%d%H%M).txt
+
 ## 应用相关：
 ### 显示已安装应用：
 adb shell pm list packages [-com.carlos.bbox]
