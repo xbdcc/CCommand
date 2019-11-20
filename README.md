@@ -174,7 +174,7 @@ adb shell screencap -p /sdcard/a.png
 - 华为：拨号键盘输入*#*#2846579#*#*，后台设置——AP LOG设置——打开
 
 ## 其他问题
-### adb pull失败
+### adb pull data/data下文件失败
 在某些手机上进入到package文件夹下执行ls命令会出现以下问题,参考链接：[opendir failed, Permission denied](https://www.jianshu.com/p/359780457fa2?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
 ```
 opendir failed, Permission denied
@@ -183,5 +183,8 @@ opendir failed, Permission denied
 ```
 run-as com.carlos.test
 ```
-
-
+### adb pull data/anr失败
+```
+ remote open failed: Permission denied
+```
+可用adb bugreport命令在当前路径下生成压缩包分析，参考链接:[调试系列2：bugreport实战篇](https://www.jianshu.com/p/1ada78f09336)
