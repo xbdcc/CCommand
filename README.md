@@ -18,6 +18,9 @@ adb start-server
 ### adb设备查看：
 adb devices
 
+### adb查看手机网络
+adb shell ifconfig wlan0
+
 ### 从电脑上传文件到手机上：
 adb push /Users/caochang/apk/BBox.apk /sdcard/xbd/BBox.apk
 
