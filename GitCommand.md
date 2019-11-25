@@ -15,6 +15,8 @@ git commit --amend -m "test2"
 git rm --cached settings.gradle
 ### 删除远端文件夹保留本地文件夹
 git rm -r --cached gradle
+### 放弃此次rebase操作
+git rebase --abort
 ## 状态查询：
 ### 查询当前状态
 git status
