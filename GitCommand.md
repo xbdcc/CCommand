@@ -2,7 +2,11 @@
 ### 添加所有文件
 git add .
 ### 添加某文件
-git add a.txt<file>
+git add a.txt<file>       
+### 已添加git的文件忽略提交
+git update-index --assume-unchanged FILENAME       路径+文件名   
+### 已添加git的文件忽略后取消忽略提交
+git update-index --no-assume-unchanged FILENAME     
 ### 恢复文件改变前
 git checkout -- xbd.md<file>
 ### 删除某文件
@@ -30,7 +34,7 @@ git checkout a.txt
 git reset HEAD a.txt
 ### 回退到某个版本
 git reset --hard 39952e15bce582b3
-### 删除上个版本记录
+### 删除上个commit记录
 git reset --soft HEAD^
 
 
