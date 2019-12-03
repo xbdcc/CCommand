@@ -8,6 +8,10 @@ windows下使用findstr，linux和mac下使用grep。
 - 插上手机输入命令：adb tcpip 5555
 - 输入连接命令：adb connect 172.16.7.204:5555
 
+以root方式执行shell命令：
+- 先执行adb root
+
+
 ## 设备连接操作：
 ### adb关闭：
 adb kill-server
@@ -84,7 +88,7 @@ adb shell "dumpsys meminfo | grep com.carlos.bbox
 
 ### 通过包名获取pid：
 adb shell "ps | grep com.aspire.agent"
-
+得到结果第二列的值为pid
 ### 通过pid获取uid：
 adb shell cat /proc/6094/status
 
@@ -123,6 +127,11 @@ adb shell am froce-stop com.carlos.bbox
 adb shell dumpsys activity | grep "mFocusedActivity"
 - 8.0以上命令
 adb shell dumpsys activity | grep "mResumedActivity"
+### 查看已经安装的包名对应的apk路径：
+adb shell pm path com.carlos.grabredenvelope
+### 导出已安装的APK：
+adb pull /data/app/com.example.carlos.myapplication--y9EFnP-__j34XhQxIwXvA==/base.apk（找到的apk路径)
+
 ## Monkey相关：
 ### 点击应用1000次：
 adb shell monkey -p com.codemao.dan -v 1000
