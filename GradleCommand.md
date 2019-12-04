@@ -5,3 +5,5 @@ gradle -q projects
 ./gradlew assembleRelease
 ## 打某个环境包
 ./gradlew assembleOppoRelease
+## 列举出APP依赖关系 
+./gradlew :app:dependencies > log.txt
