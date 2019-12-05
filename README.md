@@ -188,6 +188,12 @@ adb shell screencap -p /sdcard/a.png
 - vivo：拨号键盘输入*#*#112#*#*，Log开关——开
 - 华为：拨号键盘输入*#*#2846579#*#*，后台设置——AP LOG设置——打开
 
+## 其他
+### 列举可以被调试的pid(进程id)
+adb jdwp
+
+- [android之JDWP调试使用](https://blog.csdn.net/cigogo/article/details/87453793)
+
 ## 其他问题
 ### adb pull data/data下文件失败
 在某些手机上进入到package文件夹下执行ls命令会出现以下问题,参考链接：[opendir failed, Permission denied](https://www.jianshu.com/p/359780457fa2?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
