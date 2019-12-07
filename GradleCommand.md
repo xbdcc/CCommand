@@ -7,3 +7,5 @@ gradle -q projects
 ./gradlew assembleOppoRelease
 ## 列举出APP依赖关系 
 ./gradlew :app:dependencies > log.txt
+## 强制刷新Gradle依赖缓存
+./gradlew build --refresh-dependencies  
