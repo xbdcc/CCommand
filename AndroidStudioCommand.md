@@ -22,3 +22,9 @@ Option Command ←/→
 Command Fn F12
 ### 列选择/块选择切换模式
 Command Shift 8
+### 多重选择字段
+Control G
+
+## 断点
+### 异常断点
+Command Shift F8
