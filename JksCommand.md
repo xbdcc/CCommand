@@ -2,9 +2,9 @@
 
 ### 通过key查看
 key详情信息命令：   
-keytool -list -v -keystoret test.jks(秘钥名字) -storepass test(密码)   
+keytool -list -v -keystore test.jks(秘钥名字) -storepass test(密码)   
 证书指纹 (SHA1)命令：   
-keytool -list -keystore test.jks(秘钥名字)   
+keytool -list -v(详细输出） -keystore test.jks(秘钥名字)   
 
 ### 通过APK解压RSA查看
 keytool -printcert -file META-INF/CERT.RSA
