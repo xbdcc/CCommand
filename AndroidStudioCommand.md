@@ -24,7 +24,20 @@ Command Fn F12
 Command Shift 8
 ### 多重选择字段
 Control G
+### 快速完成
+Command Shift Enter
+### 代码提示
+Control Space
+按Enter补全后面已经输入的会不会删掉，按Tab补全后面已经输入的会全部删掉
+### 修复错误
+Option Enter
 
-## 断点
+### 查看大纲
+Command F12：显示方法和成员变量列表
+
+## 调试相关
 ### 异常断点
 Command Shift F8
+
+## 参考书籍
+- 《Android群英传——神兵利器》
