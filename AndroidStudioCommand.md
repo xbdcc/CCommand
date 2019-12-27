@@ -31,6 +31,17 @@ Control Space
 按Enter补全后面已经输入的会不会删掉，按Tab补全后面已经输入的会全部删掉
 ### 修复错误
 Option Enter
+### 添加或取消书签
+F3
+### 调出书签面板
+Command F3
+
+### 打开快速重构入口
+Control T
+### 快速对代码块添加surround with操作
+Command Option T
+### 查看方法调用栈
+Control Option H
 
 ### 查看大纲
 Command F12：显示方法和成员变量列表
