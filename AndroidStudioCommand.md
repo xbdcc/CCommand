@@ -10,8 +10,10 @@ Command K
 Shift Command K
 ### 逐步扩大（缩小）选择范围
 Option ↑/↓
-### 最近打开过的文件列表
+### 显示最近浏览文件列表
 Command E
+### 显示最近编辑文件列表
+Command Shift E
 ### 当前文件搜索内容
 Command F
 ### 全局文件搜索内容
@@ -42,6 +44,13 @@ Control T
 Command Option T
 ### 查看方法调用栈
 Control Option H
+### 快速查看方法定义
+Command P
+### 预览方法定义
+Command Y
+### 在文件系统中打开文件
+按住`Command`键并点击打开的tab页
+
 
 ### 查看大纲
 Command F12：显示方法和成员变量列表
