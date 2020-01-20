@@ -66,10 +66,12 @@ git rebase master
 ### 查看远程分支
 git branch -r
 ### 推送分支
-git push origin dev<br>
+git push origin dev  
 git push origin master:master
 ### 远程克隆分支
 git clone -b dev ssh://git@xxx.xxx.cn/xxx/test.git
+### 替换分支
+git reset –-hard dev // 将本地当前分支重置成本地dev分支
 
 ## Tag操作
 ### 查看Tag
