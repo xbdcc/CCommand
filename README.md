@@ -78,7 +78,12 @@ adb shell dumpsys power | findstr "Display Power:state="
 
 ## 性能相关：
 ### 冷热启动耗时时间：
-adb shell am start -W com.UCMobile/com.uc.browser.InnerUCMobile
+```
+adb shell am start      
+    -W: wait for launch to complete    
+    -S: force stop the target app before starting the activity 
+```
+例`adb shell am start -W com.UCMobile/com.uc.browser.InnerUCMobile`
 
 ### 应用cpu占用率：
 adb shell dumpsys cpuinfo| find "com.sec.android.app.launcher"
