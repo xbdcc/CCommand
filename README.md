@@ -83,7 +83,8 @@ adb shell am start
     -W: wait for launch to complete    
     -S: force stop the target app before starting the activity 
 ```
-例`adb shell am start -W com.UCMobile/com.uc.browser.InnerUCMobile`
+例`adb shell am start -W com.UCMobile/com.uc.browser.InnerUCMobile`  
+在AS中可过滤`displayed`输出的启动日志
 
 ### 应用cpu占用率：
 adb shell dumpsys cpuinfo| find "com.sec.android.app.launcher"
