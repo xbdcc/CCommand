@@ -3,6 +3,8 @@ Android Studio中可以在Terminal输入./gradlew代表gradle
 gradle -q projects
 ## 打出所有包
 ./gradlew assembleRelease
+## 打包并且输出task的执行时间
+./gradlew assembleDebug --profile(在project的build/reports/profile下会生成报告文件，打开可在浏览器直观查看）
 ## 打某个环境包
 ./gradlew assembleOppoRelease
 ## 列举出APP依赖关系 
