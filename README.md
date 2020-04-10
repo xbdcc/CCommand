@@ -137,6 +137,8 @@ adb shell dumpsys activity | grep "mResumedActivity"
 adb shell pm path com.carlos.grabredenvelope
 ### 导出已安装的APK：
 adb pull /data/app/com.example.carlos.myapplication--y9EFnP-__j34XhQxIwXvA==/base.apk（找到的apk路径)
+### 当前栈顶的Activity信息输出到文件
+adb shell dumpsys activity top > info.txt
 
 ## Monkey相关：
 ### 点击应用1000次：
