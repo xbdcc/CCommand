@@ -11,6 +11,10 @@ windows下使用findstr，linux和mac下使用grep。
 以root方式执行shell命令：
 - 先执行adb root
 
+如果结果太长可以保存到文件中，如：   
+- `>`新建或覆盖文件保存：`adb shell pm list packages > installed_package.txt`   
+- `>>`往文件中追加结果： `adb shell pm list packages >> installed_package.txt`   
+ 
 
 ## 设备连接操作：
 ### adb关闭：
@@ -133,6 +137,9 @@ adb shell am froce-stop com.carlos.bbox
 adb shell dumpsys activity | grep "mFocusedActivity"
 - 8.0以上命令
 adb shell dumpsys activity | grep "mResumedActivity"
+### Activity信息和View Hierarchy：   
+adb shell dumpsys activity top   
+
 ### 查看已经安装的包名对应的apk路径：
 adb shell pm path com.carlos.grabredenvelope
 ### 导出已安装的APK：
