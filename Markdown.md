@@ -73,6 +73,14 @@
 如`![小不点](http://xbdcc.cn/xbd/xbd.jpg)`显示效果如下：  
 ![小不点](http://xbdcc.cn/xbd/xbd.jpg)
 
+- 表格显示图片，可以用上面的表格方式，内容里填图片就行了，如：
+
+|微信赞赏|支付宝赞赏|微信转账|
+|:-:|:-:|:-:|
+|![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/wechat_reward.jpg) | ![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/alipay.jpg)| ![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/wechat.jpg)|
+
+
+
 ### 锚点
 - 通过锚点指向超链接，如
 ```
@@ -94,7 +102,9 @@
 [command_scripts]:command_scripts    
 [command_scripts][command_scripts]
 ```
+
 示例如：   
+
 [command_scripts]:command_scripts    
 [command_scripts][command_scripts]
 
@@ -102,5 +112,8 @@
 - `[显示文本](跳转链接)`，如`[CComand](https://github.com/xbdcc/CCommand/)`显示效果如:[CComand](https://github.com/xbdcc/CCommand/)    
 - `[显示文本](跳转链接 "文本显示标题")`，如`[CComand](https://github.com/xbdcc/CCommand/, "Command")`显示效果如:[CComand](https://github.com/xbdcc/CCommand/ "Command")    
 再如其他例，参考链接：  
-- [Markdown基本语法]https://files.cnblogs.com/files/artwalker/o_skirt.bmp）
+- [Markdown基本语法](https://files.cnblogs.com/files/artwalker/o_skirt.bmp）
 - [Markdown在线编辑器](http://www.mdeditor.com/)
+
+
+
