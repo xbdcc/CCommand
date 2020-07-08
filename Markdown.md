@@ -75,9 +75,29 @@
 
 - 表格显示图片，可以用上面的表格方式，内容里填图片就行了，如：
 
-|微信赞赏|支付宝赞赏|微信转账|
+|微信赞赏|支付宝打赏|微信转账|
 |:-:|:-:|:-:|
-|![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/wechat_reward.jpg) | ![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/alipay.jpg)| ![](http://xbdcc.cn/xbd/img/GrabRedEnvelope/wechat.jpg)|
+|![微信赞赏](http://xbdcc.cn/image/GrabRedEnvelope/wechat_reward.jpg)|![支付宝搭上](http://xbdcc.cn/image/GrabRedEnvelope/alipay.jpg)|![微信转账](http://xbdcc.cn/image/GrabRedEnvelope/wechat.jpg)|
+
+- 也可以以Html显示，如：
+```html
+<figure>
+<img src="http://xbdcc.cn/image/GrabRedEnvelope/wechat_reward.jpg" height="300"/>
+<img src="http://xbdcc.cn/image/GrabRedEnvelope/alipay.jpg" height="300"/>
+</figure>
+
+## 打赏
+<table>
+    <tr>
+        <td>
+            <img src="http://xbdcc.cn/image/GrabRedEnvelope/wechat_reward.jpg" height="300"/>
+        </td>
+        <td>
+            <img src="http://xbdcc.cn/image/GrabRedEnvelope/alipay.jpg" height="300"/>
+        </td>
+    </tr>
+</table>
+```
 
 
 
