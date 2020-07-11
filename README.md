@@ -162,6 +162,9 @@ adb shell input text hello world
 ### 截图：
 adb shell screencap -p /sdcard/a.png
 
+### 录屏
+adb shell screenrecord /sdcard/test.mp4
+
 
 ## Android工程模式拨号指令
 ### 进入工程模式选项
