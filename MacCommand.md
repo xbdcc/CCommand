@@ -19,3 +19,5 @@ Command W
 Command Shift 4 
 ### 截取当前窗口
 Command Shift 4 Space
+### 全局搜索
+Command Space，如果要进入文件夹路径则选中按`Command Enter`
