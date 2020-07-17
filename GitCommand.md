@@ -26,6 +26,12 @@ git rebase --abort
 git status
 ### 查询提交日志
 git log
+### 合并提交
+git rebase -i
+- `git rebase -i HEAD~2`合并最近两次，回车进入vim控制台修改
+- 第二行即最近一次提交的`pick`改为`squash`压缩为最后一次提交，vim保存退出
+- 弹出信息框可修改提交信息，保存退出
+- 执行`git push -f`与远端仓库同步        
 
 ## 版本回退：
 ### 执行git add前执行放弃本地修改，恢复上次提交
@@ -114,5 +120,7 @@ Arcanist基本使用教程：
 https://www.5288z.com/1469.html
 
 
+## 参考链接
+- [git rebase -i](https://www.cnblogs.com/amou/p/9465880.html)
 
 
