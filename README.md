@@ -165,6 +165,18 @@ adb shell screencap -p /sdcard/a.png
 ### 录屏
 adb shell screenrecord /sdcard/test.mp4
 
+## 调试相关
+### View Server
+#### 查看是否开启命令：
+adb shell service call window 3<br>
+返回值是：Result: Parcel(00000000 00000000 '........')" 说明View Server处于关闭状态<br>
+返回值是：Result: Parcel(00000000 00000001 '........')" 说明View Server处于开启状态
+#### 打开View Server：
+adb shell service call window 1 i32 4939
+#### 关闭View Server：
+adb shell service call window 2 i32 4939
+
+
 
 ## Android工程模式拨号指令
 ### 进入工程模式选项
