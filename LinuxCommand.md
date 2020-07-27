@@ -28,11 +28,12 @@
 #### 文件权限
 可以先执行`ls -l`查看当前文件夹下的文件，显示结果如下：
 ```
--rwxrwxrwx@ 1 caochang  staff    49B Jul  5 11:42 adb_activity_top.sh
+-rw-rw-rw-@ 1 caochang  staff    49B Jul  5 11:42 adb_activity_top.sh
 -rwxr-x--x 1 caochang  staff    1257 Jul 18 22:53 xbd
 ```
 如`rwxr-xr-x`分别为当前用户具有`rwx`读写执行权限`4+2+1`，用户组具有`r-x`读执行权限`4+1`，`--x`执行权限`1`
 - `chmod 777 xbd` 则将权限改为`-rwxrwxrwx`
+- `chmod +x adb_activity_top.sh` 给`adb_activity_top.sh`添加执行权限
 
 ## 参考链接
 - [Linux常用命令](https://blog.csdn.net/luansj/article/details/97272672)
