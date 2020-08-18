@@ -239,3 +239,7 @@ run-as com.carlos.test
  remote open failed: Permission denied
 ```
 可用adb bugreport命令在当前路径下生成压缩包分析，参考链接:[调试系列2：bugreport实战篇](https://www.jianshu.com/p/1ada78f09336)
+
+### adb端口占用
+- 然后查找5037端口：lsof -i tcp:5037
+- .杀掉这个进程：kill 1019
