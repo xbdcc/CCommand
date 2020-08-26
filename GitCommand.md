@@ -98,6 +98,13 @@ git push origin :0.1.1
 
 ### 查看某个文件的包含提交人员，日期、版本号等记录信息，不包括修改详情
 git whatchanged <filename>
+         
+         
+## 仓库相关
+### 查看当前仓库地址
+git remote -v    
+git remote show origin
+
 
 ## Git Commit规范
 Angular 的 commit 规范：https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines    
