@@ -127,6 +127,10 @@ Arcanist基本使用教程：
 https://www.5288z.com/1469.html
 
 
+## Problem
+SSH连接的时候Host key verification failed.
+https://www.cnblogs.com/guanbin-529/p/11693048.html
+
 ## 参考链接
 - [git rebase -i](https://www.cnblogs.com/amou/p/9465880.html)
 
