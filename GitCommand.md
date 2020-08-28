@@ -105,6 +105,13 @@ git whatchanged <filename>
 git remote -v    
 git remote show origin
 
+## 权限相关
+ssh -T git@github.com
+
+## Gerrit
+refs/for 的意义在于我们提交代码到服务器之后是需要经过code review 之后才能进行merge的，而refs/heads 不需要  
+git push origin HEAD:refs/for/master(仓库名)
+
 
 ## Git Commit规范
 Angular 的 commit 规范：https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines    
@@ -133,5 +140,7 @@ https://www.cnblogs.com/guanbin-529/p/11693048.html
 
 ## 参考链接
 - [git rebase -i](https://www.cnblogs.com/amou/p/9465880.html)
+- [Git 多用户配置]https://blog.csdn.net/yuanlaijike/article/details/95650625
+- [gerri push git remote: ERROR](https://www.cnblogs.com/boann/p/5627082.html)
 
 
