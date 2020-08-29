@@ -49,6 +49,9 @@ adb -d shell getprop ro.product.model
 ### 获取手机系统SDK版本号：
 adb shell getprop ro.build.version.sdk
 
+### 获取Android系统版本号：
+adb shell getprop ro.build.version.release
+
 ### 获取手机分辨率：
 adb shell wm size
 
