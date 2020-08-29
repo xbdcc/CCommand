@@ -105,8 +105,23 @@ git whatchanged <filename>
 git remote -v    
 git remote show origin
 
+### 配置文件
+在git中，我们使用git config 命令用来配置git的配置文件，git配置级别主要有以下3类：
+1、仓库级别 local 【优先级最高】
+2、用户级别 global【优先级次之】
+3、系统级别 system【优先级最低】
+### 查看配置
+- 查看仓库配置：git config --local -l 
+- 查看用户配置：git config --global -l 
+- 查看系统配置：git config --system -l 
+### 查看或修改用户名邮箱
+- git config --global user.email
+- git config --local user.name xbd
+
+
 ## 权限相关
 ssh -T git@github.com
+
 
 ## Gerrit
 refs/for 的意义在于我们提交代码到服务器之后是需要经过code review 之后才能进行merge的，而refs/heads 不需要  
