@@ -11,6 +11,10 @@ windows下使用findstr，linux和mac下使用grep。
 以root方式执行shell命令：
 - 先执行adb root
 
+`Read-only file system`时以可读写方式执行:
+- adb remount
+
+
 如果结果太长可以保存到文件中，如：   
 - `>`新建或覆盖文件保存：`adb shell pm list packages > installed_package.txt`   
 - `>>`往文件中追加结果： `adb shell pm list packages >> installed_package.txt`   
