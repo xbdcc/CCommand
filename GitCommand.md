@@ -67,8 +67,10 @@ git checkout dev
 ### 拉取并切换远程分支
 git checkout -b dev(本地分支名) origin/dev(远端分支名)
 ### 合并分支
-git merge master
-git rebase master
+- 合并master分支到dev
+先`git checktout master`,再'git merge master`
+先`git checktout master`,再'git revase master`
+
 ### 查看远程分支
 git branch -r
 ### 推送分支
