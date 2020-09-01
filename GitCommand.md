@@ -42,9 +42,15 @@ git reset HEAD a.txt
 git reset --hard 39952e15bce582b3
 ### 删除上个commit记录
 git reset --soft HEAD^
+### 进行了多次操作想回到之前版本
+- 先用`git reflog`查看修改记录
+- 找到想要退回的版本如:59d03f4 HEAD@{1}: reset: moving to HEAD^
+- 再用`git reset --hard 59d03f4`强制回退到该版本
 
 
 ## 暂存操作
+### 查看暂存列表
+git stash list 
 ### 暂存本地变动并revert
 git stash "暂存当前变动，revert到上次代码"
 ### 恢复本地变动
