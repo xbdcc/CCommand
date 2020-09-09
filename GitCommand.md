@@ -133,7 +133,7 @@ ssh -T git@github.com
 
 ## Gerrit
 refs/for 的意义在于我们提交代码到服务器之后是需要经过code review 之后才能进行merge的，而refs/heads 不需要  
-git push origin HEAD:refs/for/master(仓库名)
+git push origin HEAD:refs/for/dev(仓库名)
 
 
 ## Git Commit规范
