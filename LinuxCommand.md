@@ -35,5 +35,13 @@
 - `chmod 777 xbd` 则将权限改为`-rwxrwxrwx`
 - `chmod +x adb_activity_top.sh` 给`adb_activity_top.sh`添加执行权限
 
+#### 重命名或移动目录
+`mv`命令：
+```
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+```
+- 如：mv xbd.md xbd.zip
+
 ## 参考链接
 - [Linux常用命令](https://blog.csdn.net/luansj/article/details/97272672)
