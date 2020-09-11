@@ -125,6 +125,8 @@ adb shell pm list packages [-com.carlos.bbox]
 adb shell pm clear com.carlos.bbox
 ### 卸载应用：
 adb uninstall com.carlos.bbox
+### 卸载系统应用
+adb shell pm uninstall -k --user 0 com.carlos.test
 ### 显式安装应用：
 adb install (-r强制安装) /Users/caochang/apk/BBox.apk
 ### 隐式安装应用：
@@ -144,9 +146,13 @@ adb shell am froce-stop com.carlos.bbox
 adb shell dumpsys activity | grep "mFocusedActivity"
 - 8.0以上命令
 adb shell dumpsys activity | grep "mResumedActivity"
+### 查看当前界面的信息
+adb shell dumpsys window | grep mCurrentFocus
+
 ### Activity信息和View Hierarchy：   
 adb shell dumpsys activity top   
-
+### 查看是否已安装该应用
+adb sehll pm list packages | grep "com.carlos.test"
 ### 查看已经安装的包名对应的apk路径：
 adb shell pm path com.carlos.grabredenvelope
 ### 导出已安装的APK：
