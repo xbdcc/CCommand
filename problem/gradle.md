@@ -1,0 +1,1 @@
+- [android 导入内部mvn报Received status code 500 from server: Internal Privoxy Error](https://blog.csdn.net/qq3965470/article/details/87346916)
