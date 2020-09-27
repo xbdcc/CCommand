@@ -118,6 +118,9 @@ adb shell "cat /proc/uid_stat/11110/tcp_rcv"
 ### 导出crash日志：
 adb shell dumpsys dropbox --print >>crashlog_$(date +%Y%m%d%H%M).txt
 
+### 查看meminfo内容
+adb shell cat /proc/meminfo
+
 ## 应用相关：
 ### 显示已安装应用：
 adb shell pm list packages [-com.carlos.bbox]
@@ -179,6 +182,12 @@ adb shell screencap -p /sdcard/a.png
 adb shell screenrecord /sdcard/test.mp4
 
 ## 调试相关
+### 日志
+#### 输出日志
+adb logcat -v time > log.txt
+#### 清空日志
+adb logcat -c
+
 ### View Server
 #### 查看是否开启命令：
 adb shell service call window 3<br>
