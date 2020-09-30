@@ -188,6 +188,25 @@ adb logcat -v time > log.txt
 #### 清空日志
 adb logcat -c
 
+### TV抓包
+Charles抓包，针对Lancher未提供设置网络代理和打开浏览器功能，使用adb来打开原生设置网络代理安装证书
+- 启动设置
+```
+adb shell am start com.android.settings/com.android.settings.Settings
+```
+- 连接网络，输入代理，TV按键操作打字不方便，可以用adb，如：
+```
+adb shell input text 172.17.5.166
+```
+- 代理设置好后打开浏览器
+```
+adb shell am start com.android.browser/com.android.browser.BrowserActivity
+```
+- 输入`chls.pro/ssl`安装证书
+```
+adb shell input text chls.pro/ssl
+```
+
 ### View Server
 #### 查看是否开启命令：
 adb shell service call window 3<br>
