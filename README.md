@@ -207,6 +207,13 @@ adb shell am start com.android.browser/com.android.browser.BrowserActivity
 adb shell input text chls.pro/ssl
 ```
 
+找到了更加快捷的做法,直接adb设置代理,如:
+```
+adb shell settings put global http_proxy 127.0.0.1:8888
+```
+
+
+
 ### View Server
 #### 查看是否开启命令：
 adb shell service call window 3<br>
