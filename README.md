@@ -212,7 +212,12 @@ adb shell input text chls.pro/ssl
 adb shell settings put global http_proxy 127.0.0.1:8888
 ```
 
-
+### 开发者选项
+#### 打开/关闭布局边界
+```
+adb shell setprop debug.layout true 
+adb shell setprop debug.layout false 
+```
 
 ### View Server
 #### 查看是否开启命令：
