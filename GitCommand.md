@@ -167,5 +167,5 @@ https://www.cnblogs.com/guanbin-529/p/11693048.html
 - [git rebase -i](https://www.cnblogs.com/amou/p/9465880.html)
 - [Git 多用户配置]https://blog.csdn.net/yuanlaijike/article/details/95650625
 - [gerri push git remote: ERROR](https://www.cnblogs.com/boann/p/5627082.html)
-
+- [通过阅读git-config文档理解Git如何使用autocrlf、safecrlf、eol和.gitattributes处理line-ending](https://www.jianshu.com/p/2a46dfd3705a)
 
