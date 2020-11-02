@@ -11,3 +11,7 @@ gradle -q projects
 ./gradlew :app:dependencies > log.txt
 ## 强制刷新Gradle依赖缓存
 ./gradlew build --refresh-dependencies  
+
+
+## 参考链接
+- [Gradle多渠道配置总结](https://www.jishudog.com/9037/html)
