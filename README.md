@@ -212,6 +212,12 @@ adb shell input text chls.pro/ssl
 adb shell settings put global http_proxy 127.0.0.1:8888
 ```
 
+### TV抓包
+模拟按键上下
+```
+adb shell input keyevent KEYCODE_DPAD_UP
+adb shell input keyevent KEYCODE_DPAD_DOWN
+```
 ### 开发者选项
 #### 打开/关闭布局边界
 ```
