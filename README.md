@@ -45,10 +45,10 @@ adb pull /sdcard/xbd/BBox.apk /Users/caochang/apk/BBox.apk
 adb shell dumpsys iphonesubinfo
 
 ### 获取手机品牌：
-adb -d shell getprop ro.product.brand
+adb shell getprop ro.product.brand
 
 ### 获取手机型号：
-adb -d shell getprop ro.product.model
+adb shell getprop ro.product.model
 
 ### 获取手机系统SDK版本号：
 adb shell getprop ro.build.version.sdk
