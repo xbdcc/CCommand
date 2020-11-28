@@ -18,6 +18,9 @@ python systrace.py --list-categories
 - python sdk/platform-tools/systrace/systrace.py 
 - python systrace.py --time=10 -o mytrace.html sched gfx view wm
 
+### 参考链接
+[Android如何使用mapping文件，定位线上bug](https://blog.csdn.net/lzq520210/article/details/108096809)
+
 ### 问题收集
 #### 浏览器打开Trace失败
 浏览器打开生成的.html的trace文件时弹出`Import error`框提示如下:
