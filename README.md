@@ -72,6 +72,14 @@ adb shell wm density 480
 adb shell getprop ro.product.cpu.abilist(Android5.0系统之后)    
 adb shell getprop ro.product.cpu.abi(Android5.0系统之前)
 
+### 获取手机mac：
+adb shell cat /sys/class/net/eth0/address(网卡一)   
+adb shell cat /sys/class/net/wlan0/address(无线网卡)   
+
+### 获取deviceId：
+adb shell settings get secure android_id   
+adb shell content query --uri content://settings/secure/android_id --projection value
+
 ## 系统设置相关：
 ### 获取屏幕休眠时间：
 adb shell settings get system screen_off_timeout
