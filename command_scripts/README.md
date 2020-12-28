@@ -18,3 +18,4 @@
 
 ## 参考链接
 - [一篇文章学懂Shell脚本](https://www.jianshu.com/p/71cb62f08768)
+- [Android自动设置HTTP代理](https://zhuanlan.zhihu.com/p/134136375?from_voters_page=true)
