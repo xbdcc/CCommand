@@ -219,6 +219,10 @@ adb shell input text chls.pro/ssl
 ```
 adb shell settings put global http_proxy 127.0.0.1:8888
 ```
+adb清除代理:
+```
+adb shell settings put global http_proxy :0
+```
 [Charles清除代理三种方式](https://blog.csdn.net/cpcpcp123/article/details/103978801)
 
 ### TV抓包
