@@ -84,6 +84,9 @@ adb shell content query --uri content://settings/secure/android_id --projection 
 ### 获取屏幕休眠时间：
 adb shell settings get system screen_off_timeout
 
+### 设置屏幕休眠时间(ms)：
+adb shell settings put system screen_off_timeout 60000
+
 ### 查看默认短信应用：
 adb shell settings get secure sms_default_application
 
