@@ -132,6 +132,9 @@ adb shell dumpsys dropbox --print >>crashlog_$(date +%Y%m%d%H%M).txt
 ### 查看meminfo内容
 adb shell cat /proc/meminfo
 
+### 通过pid模拟杀进程
+adb shell kill -9 6094
+
 ## 应用相关：
 ### 显示已安装应用：
 adb shell pm list packages [-com.carlos.bbox]
