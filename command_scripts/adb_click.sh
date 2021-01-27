@@ -35,7 +35,6 @@ do
 done
 
 #如果横纵坐标未赋值，则赋值
-echo $x
 if [ "$x" = "" ]; then
     read -p "请输入横坐标:" x
 fi
@@ -45,8 +44,11 @@ fi
 
 read -p "回车开始点击:"
 
+
+adb shell <<eof
 while [ true ]; do
-  echo "点击坐标点($x, $y)"
-  adb shell input tap $x $y
+  echo "$(date +"%Y-%m-%d %T") 点击坐标点($x, $y)"
+  input tap $x $y
 #  sleep 1
 done
+eof
