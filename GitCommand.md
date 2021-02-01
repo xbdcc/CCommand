@@ -73,9 +73,9 @@ git checkout dev
 ### 拉取并切换远程分支
 git checkout -b dev(本地分支名) origin/dev(远端分支名)
 ### 合并分支
-- 合并master分支到dev   
-先`git checktout master`,再`git merge master`   
-先`git checktout master`,再`git rebase master`   
+合并*master*分支改动到*dev*分支
+- 先从master分支切到dev，执行`git checkout dev`
+- 再合并master改动到dev，执行`git rebase master` 或`git merge master`   
 ### 合并分支忽略尾部空格的改变
 git merge -Xignore-space-at-eol master（https://zhuanlan.zhihu.com/p/66152363）
 
