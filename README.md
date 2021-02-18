@@ -41,6 +41,9 @@ adb pull /sdcard/xbd/BBox.apk /Users/caochang/apk/BBox.apk
 
 
 ## 获取系统参数：
+### 输出设备信息到文件：
+adb shell getprop > info.txt
+
 ### 获取IMEI：
 adb shell dumpsys iphonesubinfo
 
