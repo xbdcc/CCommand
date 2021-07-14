@@ -158,7 +158,17 @@ adb shell am broadcast -a com.carlos.bbox -e port 8888
 ### 启动服务：
 adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService 
 ### 启动应用：
-adb shell am start -n com.carlos.bbox/.MainActivity
+adb shell am start -n com.carlos.bbox/.MainActivity   
+启动带参数:
+```
+-a action；activity对应的action；
+--es key stringValue; 传递 String 参数;
+--ez key booleanValue; 传递 Boolean 参数；
+--ei key intValue; 传递 int 参数；
+--el key longValue; 传递 long 参数；
+--ef key floatValue; 传递 float 参数；
+```
+
 ### 停止应用：
 adb shell am froce-stop com.carlos.bbox
 ### 查看顶层Activity类名：
