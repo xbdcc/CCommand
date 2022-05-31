@@ -33,6 +33,17 @@ git rebase -i
 - 弹出信息框可修改提交信息，保存退出
 - 执行`git push -f`与远端仓库同步        
 
+### 查看所有分支总提交次数
+git rev-list --all --count
+### 查看master分支总提交次数
+git rev-list --count master
+### 查看dev分支日期范围内提交次数
+git rev-list --count dev --after="2022-4-27 0:0:0" --before="2022-5-31 0:0:0"
+### 比较两个分支的不同
+git log local...dev
+### 查看master分支中不包含dev的内容
+git log dev..master         
+         
 ## 版本回退：
 ### 执行git add前执行放弃本地修改，恢复上次提交
 git checkout a.txt
