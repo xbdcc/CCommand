@@ -315,6 +315,10 @@ adb jdwp
 
 - [android之JDWP调试使用](https://blog.csdn.net/cigogo/article/details/87453793)
 
+### 通过脚本下载Android源码
+- [在Windows系统里下载Android源码](https://www.jianshu.com/p/6a74190110d9)   
+可结合`Source Insight`阅读源码
+
 ## 其他问题
 ### adb pull data/data下文件失败
 在某些手机上进入到package文件夹下执行ls命令会出现以下问题,参考链接：[opendir failed, Permission denied](https://www.jianshu.com/p/359780457fa2?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
