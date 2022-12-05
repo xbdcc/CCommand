@@ -83,6 +83,11 @@ adb shell cat /sys/class/net/wlan0/address(无线网卡)
 adb shell settings get secure android_id   
 adb shell content query --uri content://settings/secure/android_id --projection value
 
+### 查看系统支持的编解码器：
+adb shell system/etc/media_codecs.xml       
+adb shell cat /etc/media_codecs.xml | grep -i "hevc"(查看是否支持h265)   
+
+
 ## 系统设置相关：
 ### 获取屏幕休眠时间：
 adb shell settings get system screen_off_timeout
