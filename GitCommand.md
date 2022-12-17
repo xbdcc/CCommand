@@ -138,7 +138,8 @@ git remote show origin
 ### 查看或修改用户名邮箱
 - git config --global user.email
 - git config --local user.name xbd
-
+### 修复push时SSL权限错误
+- git config --global http.sslVerify false  
 
 ## 权限相关
 ssh -T git@github.com
