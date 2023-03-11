@@ -111,6 +111,22 @@ adb shell cat /system/build.prop
 `heapgrowthlimit`:普通应用内存限制，对应`ActivityManager.getMemoryClass()`方法获取的值       
 `heapsize`:`manifest`中设置了`largeHeap=true`之后，可以使用的最大内存值，对应`ActivityManager.getLargeMemoryClass()`方法获取的值     
 
+### 查看设置相关属性
+Android4.4目录下，相关路径`data/data/com.android.providers.settings/databases/settings.db`，可以打开数据库查看   
+获取值   
+```
+adb shell settings get system [key]   
+adb shell settings get global [key]   
+adb shell settings get secure [key]   
+```
+设置值
+```
+adb shell settings put secure [key] [value]   
+...
+```
+如，获取定义按转为长按之前的默认持续时间（毫秒）：`adb shell settings get secure long_press_timeout`
+
+
 ## 性能相关：
 ### 冷热启动耗时时间：
 ```
