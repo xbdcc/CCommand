@@ -113,6 +113,7 @@ adb shell cat /system/build.prop
 
 ### 查看设置相关属性
 Android4.4目录下，相关路径`data/data/com.android.providers.settings/databases/settings.db`，可以打开数据库查看   
+Android7.x目录下，相关路径`data/system/users/0`，路径下`settings_secure.xml`、`settings_system.xml`、`settings_global.xml`文件   
 获取值   
 ```
 adb shell settings get system [key]   
