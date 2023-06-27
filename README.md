@@ -109,7 +109,11 @@ adb shell dumpsys power | findstr "Display Power:state="
 ### 查看系统属性
 adb shell cat /system/build.prop     
 `heapgrowthlimit`:普通应用内存限制，对应`ActivityManager.getMemoryClass()`方法获取的值       
-`heapsize`:`manifest`中设置了`largeHeap=true`之后，可以使用的最大内存值，对应`ActivityManager.getLargeMemoryClass()`方法获取的值     
+`heapsize`:`manifest`中设置了`largeHeap=true`之后，可以使用的最大内存值，对应`ActivityManager.getLargeMemoryClass()`方法获取的值  
+
+### 查看系统虚拟机类型
+adb shell getprop persist.sys.dalvik.vm.lib   
+若值为libdvm.so则为dalvik，libart.so则为art
 
 ### 查看设置相关属性
 Android4.4目录下，相关路径`data/data/com.android.providers.settings/databases/settings.db`，可以打开数据库查看   
