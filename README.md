@@ -287,6 +287,8 @@ adb shell input keyevent KEYCODE_DPAD_DOWN
 adb shell setprop debug.layout true 
 adb shell setprop debug.layout false 
 ```
+立即生效     
+adb shell service call activity 1599295570
 
 ### View Server
 #### 查看是否开启命令：
