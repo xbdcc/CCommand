@@ -242,7 +242,7 @@ adb shell screenrecord /sdcard/test.mp4
 ## 调试相关
 ### 日志
 #### 输出日志
-adb logcat -v time > log.txt
+adb logcat -v thradtime > log.txt
 #### 清空日志
 adb logcat -c
 
