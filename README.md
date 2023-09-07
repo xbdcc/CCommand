@@ -131,6 +131,8 @@ adb shell settings put secure [key] [value]
 ```
 如，获取定义按转为长按之前的默认持续时间（毫秒）：`adb shell settings get secure long_press_timeout`
 
+### 移除属性值
+adb shell setprop persist.sys.theme \"\"     
 
 ## 性能相关：
 ### 冷热启动耗时时间：
