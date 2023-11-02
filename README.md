@@ -250,7 +250,7 @@ adb logcat -c
 #### 查看日志缓冲区大小
 adb logcat -g  
 #### 修改日志缓冲区大小  
-logcat -g 2MB  
+adb logcat -G 2MB  
 
 ### TV抓包
 Charles抓包，针对Lancher未提供设置网络代理和打开浏览器功能，使用adb来打开原生设置网络代理安装证书
