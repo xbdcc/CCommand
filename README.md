@@ -247,6 +247,10 @@ adb shell screenrecord /sdcard/test.mp4
 adb logcat -v thradtime > log.txt
 #### 清空日志
 adb logcat -c
+#### 查看日志缓冲区大小
+adb logcat -g  
+#### 修改日志缓冲区大小  
+logcat -g 2MB  
 
 ### TV抓包
 Charles抓包，针对Lancher未提供设置网络代理和打开浏览器功能，使用adb来打开原生设置网络代理安装证书
