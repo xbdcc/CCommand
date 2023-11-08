@@ -191,7 +191,8 @@ adb shell am broadcast -a com.carlos.bbox -e port 8888
 ### 启动服务：
 adb shell am startservice com.carlos.bbox/com.carlos.bbox.MyService 
 ### 启动应用：
-adb shell am start -n com.carlos.bbox/.MainActivity   
+adb shell am start -n com.carlos.bbox/.MainActivity    
+adb shell am start -n com.test.app/com.test.TestActivity -d test://com.test.app/test?testId=13    
 启动带参数:
 ```
 -a action；activity对应的action；
