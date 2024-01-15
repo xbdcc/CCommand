@@ -8,6 +8,9 @@ windows下使用findstr，linux和mac下使用grep。
 - 插上手机输入命令：adb tcpip 5555
 - 输入连接命令：adb connect 172.16.7.204:5555
 
+通过配对码连接设备:
+- 手机开发者选项中打开无限调试,然后命令adb pair 172.17.8.90:39827连接,弹出框输入配对码
+
 以root方式执行shell命令：
 - 先执行adb root
 
