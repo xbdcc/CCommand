@@ -91,8 +91,8 @@ adb shell system/etc/media_codecs.xml
 adb shell cat /etc/media_codecs.xml | grep -i "hevc"(查看是否支持h265)   
 
 ### 开发者选项
-获取开发者选项值 
-adb shell settings get global development_settings_enabled   
+获取开发者选项值   
+adb shell settings get global development_settings_enabled    
 打开开发者选项   
 adb shell settings put global development_settings_enabled 1   
 关闭开发者选项   
