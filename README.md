@@ -272,6 +272,21 @@ adb logcat -g
 #### 修改日志缓冲区大小  
 adb logcat -G 2MB  
 
+#### 抓网络包保存至SD卡
+adb shell tcpdump -i any -p -s 0 -w /sdcard/11.pcap
+
+#### 可以通过adb直接拦截某个服务器的请求，可用于测试异常情况，ACCEPT放通，DROP封堵
+Ipv4封堵：     
+iptables -I INPUT -s 192.168.1.138 -j DROP       
+Ipv4解除：  
+iptables -I INPUT -s 192.168.1.138 -j ACCEPT       
+​ 
+Ipv6封堵：      
+ip6tables -I INPUT -s 1050:0000:0000:0000:0005:0600:300c:326b -j DROP      
+Ipv6解除：   
+ip6tables -I INPUT -s 1050:0000:0000:0000:0005:0600:300c:326b -j ACCEPT       
+
+
 ### TV抓包
 Charles抓包，针对Lancher未提供设置网络代理和打开浏览器功能，使用adb来打开原生设置网络代理安装证书
 - 启动设置
