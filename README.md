@@ -294,6 +294,7 @@ ip6tables -I INPUT -s 1050:0000:0000:0000:0005:0600:300c:326b -j ACCEPT
 Charles抓包，针对Lancher未提供设置网络代理和打开浏览器功能，使用adb来打开原生设置网络代理安装证书
 - 启动设置
 ```
+adb shell am start -a android.settings.SETTINGS
 adb shell am start com.android.settings/com.android.settings.Settings
 ```
 - 连接网络，输入代理，TV按键操作打字不方便，可以用adb，如：
