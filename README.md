@@ -272,6 +272,9 @@ adb logcat -g
 #### 修改日志缓冲区大小  
 adb logcat -G 2MB  
 
+#### 启动浏览器
+adb shell am start -a android.intent.action.VIEW -d "https://www.baidu.com"
+
 #### 抓网络包保存至SD卡
 adb shell tcpdump -i any -p -s 0 -w /sdcard/11.pcap
 
