@@ -20,4 +20,13 @@ Command Shift 4
 ### 截取当前窗口
 Command Shift 4 Space
 ### 全局搜索
-Command Space，如果要进入文件夹路径则选中按`Command Enter`
+Command Space，如果要进入文件夹路径则选中按`Command Ent
+## Mac工具
+### 开启自带Apatch 服务器
+sudo apachectl start
+
+## 三方工具
+### http-server轻量级服务器使用
+- 安装http-server, `sudo npm install http-server -g`
+- 在需要开启的目录,输入`http-server`
+
