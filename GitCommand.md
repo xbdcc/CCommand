@@ -51,6 +51,8 @@ git checkout a.txt
 git reset HEAD a.txt
 ### 回退到某个版本
 git reset --hard 39952e15bce582b3
+### 回退某文件到某版本
+git checkout ecdb9973 test.txt
 ### 删除上个commit记录
 git reset --soft HEAD^
 ### 进行了多次操作想回到之前版本
