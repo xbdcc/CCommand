@@ -128,6 +128,13 @@ git whatchanged <filename>
 git remote -v    
 git remote show origin
 
+### 远端仓库相关
+- 关联远端仓库：git remote add demo git@gitee.com:xbdcc/demo.git
+- 删除关联远端仓库：git remote remove demo
+- 推送到关联远端仓库：git push demo master
+- 强制推送到远端分支（远端记录会丢失）：git push --force demo master
+
+  
 ### 配置文件
 在git中，我们使用git config 命令用来配置git的配置文件，git配置级别主要有以下3类：
 1、仓库级别 local 【优先级最高】
