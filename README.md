@@ -90,11 +90,11 @@ adb shell content query --uri content://settings/secure/android_id --projection 
 adb shell system/etc/media_codecs.xml       
 adb shell cat /etc/media_codecs.xml | grep -i "hevc"(查看是否支持h265)   
 
-### 启动浏览器
-adb shell am start -n com.bestv.ott/com.bestv.ott.action.LoadWebView --es webviewUrl "http://www.baidu.com"
-
 ### 获取屏幕密度
 adb shell dumpsys activity top | grep -A 10 "Configuration"
+
+### 获取屏幕密度宽高
+adb shell dumpsys activity top | grep "mCurrentConfig" | sed 's/.*sw\([0-9]*\)dp w\([0-9]*\)dp h\([0-9]*\)dp \([0-9]*\)dpi.*/\1 \2 \3 \4/' | awk '{print "最小宽度:", $1"dp", "宽度:", $2"dp", "高度:", $3"dp", "DPI:", $4}'
 
 ### 开发者选项
 获取开发者选项值   
