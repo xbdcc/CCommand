@@ -90,6 +90,12 @@ adb shell content query --uri content://settings/secure/android_id --projection 
 adb shell system/etc/media_codecs.xml       
 adb shell cat /etc/media_codecs.xml | grep -i "hevc"(查看是否支持h265)   
 
+### 启动浏览器
+adb shell am start -n com.bestv.ott/com.bestv.ott.action.LoadWebView --es webviewUrl "http://www.baidu.com"
+
+### 获取屏幕密度
+adb shell dumpsys activity top | grep -A 10 "Configuration"
+
 ### 开发者选项
 获取开发者选项值   
 adb shell settings get global development_settings_enabled    
@@ -151,7 +157,14 @@ adb shell settings put secure [key] [value]
 如，获取定义按转为长按之前的默认持续时间（毫秒）：`adb shell settings get secure long_press_timeout`
 
 ### 移除属性值
-adb shell setprop persist.sys.theme \"\"     
+adb shell setprop persist.sys.theme \"\"  
+
+### 打开设置Home属性页面
+adb shell am start -a android.settings.HOME_SETTINGS
+
+### 设置默认Launcher属性
+adb shell pm set-home-activity com.carlos.demo
+
 
 ## 性能相关：
 ### 冷热启动耗时时间：
