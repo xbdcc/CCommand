@@ -242,6 +242,8 @@ adb shell am froce-stop com.carlos.bbox
 adb shell dumpsys activity | grep "mFocusedActivity"
 - 8.0以上命令
 adb shell dumpsys activity | grep "mResumedActivity"
+- 10.0以上命令
+adb shell dumpsys activity | grep "topResumedActivity"
 ### 查看当前界面的信息
 adb shell dumpsys window | grep mCurrentFocus
 
